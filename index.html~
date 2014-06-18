@@ -1,0 +1,59 @@
+<!doctype html> 
+
+<html>
+<head>
+	<title>Eastern Washington University Delta Chi Chapter</title>
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/base-min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div id="demo-horizontal-menu">
+		<ul id="std-menu-items">
+			<li class="pure-menu-selected"><a href="">Facebook</a></li>
+			<li><a href ="#">Join Delta Chi</a><li>
+			<li><a href ="#">News</a></li>
+			<li><a href="#">Calendar</a></li>
+			<li><a href="#">Alumni</a></li>
+			<li><a href="#">Officers</a></li>
+			<li><a href="#">Photos</a></li>
+			<li><a href="#">Chapter History</a></li>
+			<li><a href="#">International History</a></li>
+			<li><a href="#">Contact Us</a></li>
+			<li>
+				<a href="#">Resources</a>
+				<ul>
+					<li class="pure-menu-heading">Resources<li>
+					<li class="pure-menu-separator"></li>
+					<li><a href="http://www.deltachi.org/">Official Delta Chi Website</a></li>
+					<li class="pure-menu-heading">Scholarship Information</li>
+					<li class="pure-menu-seperator"</li>
+					<li><a href=" http://www.thesimpledollar.com/college-scholarship-guide/">College Scholarship Guide</a></li>
+					<li><a href="https://login.ewu.edu/adfs/ls/?wa=wsignin1.0&wtrealm=urn:federation:ewucas">Jobs on Campus</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+
+
+
+	<script>
+		YUI({
+			classNamePrefix: 'pure'
+		}).use('gallery-sm-menu', function (Y)
+		{
+			var horizontalMenu = new Y.Menu({
+				container			: '#demo-horizontal-menu',
+				sourceNode			: '#std-menu-items'.
+				orientation			: 'horizontal',
+				hideOnOutsideClick	: false,
+				hideOnClick 		: false 
+			});
+
+			horizontalMenu.render();
+			horizontalMenu.show();
+		});
+	</script>
+
+</body>
+</html>
